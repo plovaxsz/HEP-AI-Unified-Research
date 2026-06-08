@@ -80,7 +80,31 @@ python TDA_GATv2_Research/train_robust.py
 
 # Visualize training metrics
 python TDA_GATv2_Research/visualize_training.py
+
+## Reproducibility
+
+All training artifacts are local-only due to size. To reproduce Phase 1 from scratch:
+
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Download 50k CERN Pythia q/g jets (requires EnergyFlow)
+python TDA_GATv2_Research/download_dataset.py --num-data 50000
+
+# 3. Run 100-epoch training on real data
+python TDA_GATv2_Research/train.py \
+  --epochs 100 \
+  --batch-size 128 \
+  --num-workers 4 \
+  --shard-dir TDA_GATv2_Research/data/canonical_shards_real \
+  --cache-dir TDA_GATv2_Research/data/processed_cache_real
+
+# 4. Launch 50-cycle IPR sprint (5,000 total epochs)
+python TDA_GATv2_Research/train_robust.py
 ```
+
+**Data source:** [EnergyFlow quark/gluon benchmark](https://energyflow.network/docs/datasets/#quark-and-gluon-jets) (Pythia 8.235, 50k jets, pT ∈ [500, 550] GeV).
 
 ## Citation
 
