@@ -1,0 +1,14 @@
+torch>=2.0
+torch-geometric
+scikit-learn
+pandas
+matplotlib
+seaborn
+numpy
+scipy
+ripser
+persim
+energyflow
+fastapi
+uvicorn
+psutil

@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+.env
+
+# Large data directories (regenerated from official CERN shards)
+data/
+energyflow_cache/
+smoke_artifacts/
+PDF/
+
+# Large model checkpoints (>100MB)
+models/*.pt
+models/*.pth
+*.pth
+
+# Logs
+*.log
+
+# IDE and tooling
+.vscode/
+.kilo/
+.continue/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large binary data
+*.npz
+*.npy
