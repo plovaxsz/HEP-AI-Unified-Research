@@ -1,0 +1,9 @@
+XAI Report - QUARK Jet
+==================================================
+Predicted class  : Quark
+Actual class     : Quark
+Nodes (particles): 15
+pT Concentration : +0.8850
+Attention Entropy: 0.9784
+dR Coherence     : +0.0512
+Substructure     : 0.0216

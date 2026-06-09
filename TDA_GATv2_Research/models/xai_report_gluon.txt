@@ -1,0 +1,9 @@
+XAI Report - GLUON Jet
+==================================================
+Predicted class  : Gluon
+Actual class     : Gluon
+Nodes (particles): 50
+pT Concentration : +0.8252
+Attention Entropy: 0.9932
+dR Coherence     : +0.0873
+Substructure     : 0.0068
