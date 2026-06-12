@@ -1,0 +1,41 @@
+================================================================================
+PHASE 3: ANOMALY DETECTION ENGINE — SCIENTIFIC TELEMETRY REPORT
+================================================================================
+
+Timestamp: 2026-06-10 04:46:56
+
+--------------------------------------------------------------------------------
+1. THRESHOLD CALIBRATION (3-Sigma Rule)
+--------------------------------------------------------------------------------
+  Normal Jets Tested:          5000
+  Mean Anomaly Score (mu):     -0.094182
+  Std Anomaly Score (sigma):   0.072116
+  Threshold (mu + 3*sigma):    0.122167
+
+--------------------------------------------------------------------------------
+2. MOCK ANOMALY TESTING
+--------------------------------------------------------------------------------
+  Mock Anomalous Jets:         100
+  Mean Anomaly Score:          0.020439
+  Separation Factor:           20439.09x
+  Detection Rate:              31.00%
+
+--------------------------------------------------------------------------------
+3. TRAINING CONFIGURATION
+--------------------------------------------------------------------------------
+  Encoder Epochs:              30
+  Final GraphCL Loss:          0.023429
+  Learning Rate:               0.000000
+  Generator Frozen:            True
+  Temperature (tau):           0.1
+
+--------------------------------------------------------------------------------
+4. INTERPRETATION
+--------------------------------------------------------------------------------
+  - Separation Factor > 5.0 indicates strong manifold discrimination.
+  - Detection Rate > 80% on mock anomalies validates the reconstruction metric.
+  - GraphCL training forces the encoder to learn topological invariance, not dataset mean.
+
+================================================================================
+END OF REPORT
+================================================================================

@@ -1,0 +1,32 @@
+2026-06-12 22:14:13,061 [INFO] ======================================================================
+2026-06-12 22:14:13,062 [INFO] PHASE 7 OMEGA EVALUATION – ULTIMATE VALIDATION
+2026-06-12 22:14:13,062 [INFO] ======================================================================
+2026-06-12 22:14:13,062 [INFO] Loading generated kinematics from data\phase6_generated_kinematics.pt
+2026-06-12 22:14:13,064 [INFO] Generated shape: (10000, 4)
+2026-06-12 22:14:13,064 [INFO] Reconstructing original valid kinematics from Phase 4/5...
+2026-06-12 22:14:13,257 [INFO] Original shape: (216831, 4)
+2026-06-12 22:14:13,257 [INFO] ----------------------------------------------------------------------
+2026-06-12 22:14:13,258 [INFO] TEST 1: Statistical Distance (Wasserstein / Earth Mover's)
+2026-06-12 22:14:13,300 [INFO] Wasserstein distance (p_T): 67.216572
+2026-06-12 22:14:13,338 [INFO] Wasserstein distance (eta): 0.750207
+2026-06-12 22:14:13,375 [INFO] Wasserstein distance (phi): 0.968716
+2026-06-12 22:14:13,401 [INFO] Wasserstein distance (m): 0.171936
+2026-06-12 22:14:13,402 [INFO] ----------------------------------------------------------------------
+2026-06-12 22:14:13,402 [INFO] TEST 2: Physics Constraint Validation
+2026-06-12 22:14:13,402 [INFO] Negative mass violations: 0/10000 (0.00%)
+2026-06-12 22:14:13,402 [INFO] Negative p_T violations:  0/10000 (0.00%)
+2026-06-12 22:14:13,402 [INFO] Physics Integrity Score: 100.00%
+2026-06-12 22:14:13,403 [INFO] ----------------------------------------------------------------------
+2026-06-12 22:14:13,403 [INFO] TEST 3: Round-Trip Consistency (Re-formatting for Phase 3/4)
+2026-06-12 22:14:13,404 [INFO] Round-trip tensor shaped: [72, 139, 4] (batch_size=72, particles_per_jet=139)
+2026-06-12 22:14:13,405 [INFO] Saved round-trip injection tensor to data\phase7_round_trip_injection.pt
+2026-06-12 22:14:13,405 [INFO] ----------------------------------------------------------------------
+2026-06-12 22:14:13,405 [INFO] EVALUATION SUMMARY
+2026-06-12 22:14:13,405 [INFO]   Wasserstein  p_T: 67.216572
+2026-06-12 22:14:13,405 [INFO]   Wasserstein  eta: 0.750207
+2026-06-12 22:14:13,405 [INFO]   Wasserstein  phi: 0.968716
+2026-06-12 22:14:13,405 [INFO]   Wasserstein    m: 0.171936
+2026-06-12 22:14:13,405 [INFO]   Physics Integrity: 100.00% (neg_mass: 0.00%, neg_pt: 0.00%)
+2026-06-12 22:14:13,405 [INFO]   Round-trip tensor saved: data\phase7_round_trip_injection.pt
+2026-06-12 22:14:13,405 [INFO] ======================================================================
+2026-06-12 22:14:13,405 [INFO] Phase 7 Omega Evaluation Complete.

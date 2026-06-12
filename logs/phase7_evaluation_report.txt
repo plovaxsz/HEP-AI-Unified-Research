@@ -1,0 +1,4 @@
+2026-06-12 22:06:42,474 [INFO] ======================================================================
+2026-06-12 22:06:42,474 [INFO] PHASE 7 OMEGA EVALUATION – ULTIMATE VALIDATION
+2026-06-12 22:06:42,474 [INFO] ======================================================================
+2026-06-12 22:06:42,474 [INFO] Loading generated kinematics from data\phase6_generated_kinematics.pt
